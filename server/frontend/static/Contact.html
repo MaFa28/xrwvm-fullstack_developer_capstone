@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Dealerships</title>
+  <!-- Link the style sheet here -->
+  <link rel="stylesheet" href="/static/style.css">
+  <link rel="stylesheet" href="/static/bootstrap.min.css">
+</head>
+<body>
+  <div>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color:darkturquoise; height: 1in;">
+      <div class="container-fluid">
+        <h2 style="padding-right: 5%;">Dealerships</h2>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" style="font-size: larger;" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="font-size: larger;" href="/about">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" style="font-size: larger;" aria-current="page" href="/contact">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Content Container -->
+    <div class="card" style="width: 80%; margin: auto; margin-top: 5%; margin-bottom: 5%; padding: 25px;">
+      <div class="banner" name="contact-header" style="text-align: center; margin-bottom: 30px;">
+        <h1>Contact Us</h1>
+        <p class="lead" style="color: #555;">¿Tienes alguna duda sobre nuestros autos o necesitas asesoría personalizada? ¡Ponte en contacto con nosotros!</p>
+      </div>
+
+      <!-- Grid Layout for Contact Cards -->
+      <div style="display: flex; flex-wrap: wrap; justify-content: space-around; gap: 20px;">
+        
+        <!-- Contact Details Card -->
+        <div class="card" style="width: 45%; min-width: 300px; padding: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+          <div class="card-body">
+            <h3 class="card-title" style="color: #008b8b; margin-bottom: 20px;">Nuestras Oficinas</h3>
+            <p style="font-size: 1.05rem;"><strong>📍 Dirección:</strong> Av. de las Américas #1234, Col. Centro, Guadalajara, Jal.</p>
+            <p style="font-size: 1.05rem;"><strong>📞 Ventas:</strong> +52 (33) 3812-3456</p>
+            <p style="font-size: 1.05rem;"><strong>🛠️ Soporte:</strong> +52 (33) 3812-7890</p>
+            <p style="font-size: 1.05rem;"><strong>✉️ Correo:</strong> contacto@bestcars.com</p>
+            <hr>
+            <p style="font-size: 0.95rem; color: #666;"><strong>🕒 Horario:</strong> Lunes a Viernes de 9:00 AM a 7:00 PM | Sábados de 10:00 AM a 3:00 PM</p>
+          </div>
+        </div>
+
+        <!-- Interactive Contact Form Card -->
+        <div class="card" style="width: 45%; min-width: 300px; padding: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+          <div class="card-body">
+            <h3 class="card-title" style="color: #008b8b; margin-bottom: 20px;">Envíanos un Mensaje</h3>
+            <form>
+              <div class="mb-3" style="margin-bottom: 15px;">
+                <label for="fullname" class="form-label" style="font-weight: bold;">Nombre Completo</label>
+                <input type="text" class="form-control" id="fullname" placeholder="Ej. Juan Pérez" required>
+              </div>
+              <div class="mb-3" style="margin-bottom: 15px;">
+                <label for="email" class="form-label" style="font-weight: bold;">Correo Electrónico</label>
+                <input type="email" class="form-control" id="email" placeholder="nombre@correo.com" required>
+              </div>
+              <div class="mb-3" style="margin-bottom: 15px;">
+                <label for="subject" class="form-label" style="font-weight: bold;">Asunto</label>
+                <input type="text" class="form-control" id="subject" placeholder="Información sobre cotización / prueba de manejo">
+              </div>
+              <div class="mb-3" style="margin-bottom: 20px;">
+                <label for="message" class="form-label" style="font-weight: bold;">Mensaje</label>
+                <textarea class="form-control" id="message" rows="3" placeholder="Escribe tus dudas aquí..." required></textarea>
+              </div>
+              <button type="submit" class="btn" style="background-color: darkturquoise; color: white; font-weight: bold; width: 100%;">Enviar Mensaje</button>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</body>
+</html>
