@@ -27,7 +27,7 @@ urlpatterns = [
     path('contact/', TemplateView.as_view(template_name="Contact.html")),
     path('dealers/', TemplateView.as_view(template_name="index.html")),
     path('dealer/<int:dealer_id>', TemplateView.as_view(template_name="index.html")),
-    path('postreview/<int:dealer_id>',TemplateView.as_view(template_name="index.html")),
+    path('postreview/<int:dealer_id>', TemplateView.as_view(template_name="index.html")),
 
 
     path('login/', TemplateView.as_view(template_name="index.html")),

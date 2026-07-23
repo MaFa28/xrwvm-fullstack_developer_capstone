@@ -4,6 +4,7 @@ from django.core.validators import MaxValueValidator, MinValueValidator
 
 # Create your models here.
 
+
 class CarMake(models.Model):
     name = models.CharField(max_length=100)
     description = models.TextField()
@@ -13,10 +14,12 @@ class CarMake(models.Model):
 
 
 class CarModel(models.Model):
-    car_make = models.ForeignKey(CarMake, on_delete=models.CASCADE)  # Relación de muchos a uno
-    dealer_id = models.IntegerField()  # Refiere a un concesionario en la base de datos externa
+    car_make = models.ForeignKey(
+        CarMake, on_delete=models.CASCADE)  # Relación de muchos a uno
+    # Refiere a un concesionario en la base de datos externa
+    dealer_id = models.IntegerField()
     name = models.CharField(max_length=100)
-    
+
     CAR_TYPES = [
         ('SEDAN', 'Sedan'),
         ('SUV', 'SUV'),
@@ -24,7 +27,7 @@ class CarModel(models.Model):
         # Puedes agregar más opciones si lo deseas
     ]
     type = models.CharField(max_length=10, choices=CAR_TYPES, default='SUV')
-    
+
     year = models.IntegerField(
         default=2023,
         validators=[
